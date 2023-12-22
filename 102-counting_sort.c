@@ -2,13 +2,10 @@
 #include <stdlib.h>
 
 /**
- * arr_max - array
- *
+ * arr_max - array max thingie
  * @array: array
- *
  * @size: size of the array
- *
- * Return: maximum
+ * Return: max
  */
 int arr_max(int *array, size_t size)
 {
@@ -17,22 +14,15 @@ int arr_max(int *array, size_t size)
 
 	max = array[0];
 	for (i = 1; i < size; i++)
-	{
 		if (array[i] > max)
-		{
 			max = array[i];
-		}
 	return (max);
 }
 
 /**
- * counting_sort - function that sorts an array with Counting sort algorithm
- *
+ * counting_sort - sorts an array with the Counting sort algorithm
  * @array: array to sort
- *
  * @size: size of the array
- *
- * Return: void type return
  */
 void counting_sort(int *array, size_t size)
 {
